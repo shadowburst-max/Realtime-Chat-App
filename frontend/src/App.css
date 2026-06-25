@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "daisyui"; 
+
+
+
+body, html {
+    height: 100%;
+    overflow: hidden; 
+  }
+ 
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  } 
+
+  /* Custom Scrollbar for Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Track color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Scrollbar handle color */
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Darker color on hover */
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #2d2d2d;
+}
