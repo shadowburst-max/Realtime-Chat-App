@@ -1,49 +1,57 @@
 # Realtime Chat App
 
-A real-time chat application built with **React, Node.js, Express, MongoDB, and Socket.io**. The app features **JWT authentication, real-time messaging, user search functionality, and online user tracking**.
+A full-stack real-time chat application built with **React, Node.js, Express.js, MongoDB, and Socket.IO**. The application features **JWT-based authentication**, **real-time messaging**, **user search**, and **online user status tracking** for seamless communication.
 
 ## 🚀 Features
-- **User Authentication**: Sign up, login, and persist sessions using **JWT**.
-- **Real-time Messaging**: Instant messaging powered by **Socket.io**.
-- **Online Users Tracking**: View currently active users.
-- **Search Functionality**: Find users and conversations easily.
-- **Secure Communication**: Data is securely stored in **MongoDB**.
+
+* **User Authentication:** Secure sign-up, login, and session management using JWT.
+* **Real-time Messaging:** Instant one-to-one messaging powered by Socket.IO.
+* **Online User Tracking:** View the online/offline status of users in real time.
+* **User Search:** Search for users and conversations quickly.
+* **Secure Data Storage:** User and chat data are securely stored in MongoDB.
+
 ## 🛠 Tech Stack
-### **Frontend**
-- React.js (with Context API for state management)
-- Tailwind CSS
 
-### **Backend**
-- Node.js & Express.js
-- MongoDB (Mongoose ORM)
-- Socket.io (for real-time communication)
-- JSON Web Token (JWT) for authentication
+### Frontend
 
-## 📌 Project Structure
-```
-ChatApp/
-│── frontend/      # React app
+* React.js
+* Context API (State Management)
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB (Mongoose)
+* Socket.IO
+* JSON Web Token (JWT)
+
+## 📂 Project Structure
+
+```text
+Realtime-Chat-App/
+│── frontend/      # React application
 │── backend/       # Express server
 │── .env           # Environment variables
-│── package.json   # Dependencies
+│── package.json   # Project dependencies
 │── README.md      # Project documentation
 ```
 
-## 🛠 API Endpoints
-| Method | Endpoint         | Description          |
-|--------|----------------|----------------------|
-| POST   | /api/auth/signup | Register a new user |
-| POST   | /api/auth/login  | Authenticate user   |
-| POST   | /api/auth/logout  | Logout user   |
-| POST    | /api/messages/send/:id | Send a new message |
-| GET  | /api/messages/:id | Fetch messages |
-| GET    | /api/users | Get users |
+## 📡 API Endpoints
+
+| Method | Endpoint                 | Description                    |
+| ------ | ------------------------ | ------------------------------ |
+| POST   | `/api/auth/signup`       | Register a new user            |
+| POST   | `/api/auth/login`        | Authenticate a user            |
+| POST   | `/api/auth/logout`       | Logout the current user        |
+| POST   | `/api/messages/send/:id` | Send a message                 |
+| GET    | `/api/messages/:id`      | Retrieve conversation messages |
+| GET    | `/api/users`             | Fetch all users                |
 
 ## 🎯 Future Enhancements
-- **Group chats**
-- **File sharing**
-- **Voice messaging**
-- **Audio and video calling**
-- **Push notifications**
 
-
+* Group chat support
+* File and image sharing
+* Voice messaging
+* Audio and video calling
+* Push notifications
