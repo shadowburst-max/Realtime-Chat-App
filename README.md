@@ -1,4 +1,4 @@
-# ChatApp
+# Realtime Chat App
 
 A real-time chat application built with **React, Node.js, Express, MongoDB, and Socket.io**. The app features **JWT authentication, real-time messaging, user search functionality, and online user tracking**.
 
@@ -42,9 +42,8 @@ ChatApp/
 ## 🎯 Future Enhancements
 - **Group chats**
 - **File sharing**
+- **Voice messaging**
+- **Audio and video calling**
+- **Push notifications**
 
-## 🤝 Contributing
-Feel free to fork and contribute to this project. Open a pull request with your updates.
-
-Made with ❤️ by [Vivek Kumar]
 
